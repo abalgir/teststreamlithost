@@ -4,8 +4,8 @@ from dotenv.main import load_dotenv
 import os
 load_dotenv()
 st.title("BardAPI for Python")
-
-_BARD_API_KEY=os.environ['_BARD_API_KEY']
+_BARD_API_KEY=st.secrets['_BARD_API_KEY']
+#_BARD_API_KEY=os.environ['_BARD_API_KEY']
 #import os
 from bardapi import Bard
 
